@@ -1,0 +1,40 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+    <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+    <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+    <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+    <!--<item name="colorAccent">@color/colorAccent</item>-->
+    <!--</style>-->
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryDarkColor</item>
+        <item name="colorAccent">@color/secondaryDarkColor</item>
+        <item name="android:windowBackground">@color/primaryDarkColor</item>
+        <item name="materialAlertDialogTheme">@style/DialogDark</item>
+        <item name="materialCardViewStyle">@style/CardDark</item>
+
+        <item name="android:textColor">@color/primaryTextColor</item>
+    </style>
+
+    <style name="PrimaryButton" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="android:backgroundTint">@color/primaryColor</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+    </style>
+
+    <style name="SecondaryButton" parent="PrimaryButton">
+        <item name="android:backgroundTint">@color/secondaryDarkColor</item>
+    </style>
+
+    <style name="DialogDark" parent="Theme.MaterialComponents.Dialog.Alert">
+        <item name="android:background">@color/primaryColor</item>
+        <item name="android:actionButtonStyle">@style/SecondaryButton</item>
+    </style>
+
+    <style name="CardDark" parent="CardView.Dark">
+        <item name="android:backgroundTint">@color/primaryColor</item>
+    </style>
+</resources>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Voice Sample</string>
+    <string name="mono">Mono</string>
+    <string name="stereo">Stereo</string>
+    <string name="channel">Channel</string>
+    <string name="sampling_frequency">Sampling Frequency(in Hz)</string>
+    <string name="profile">Profile</string>
+    <string name="view_data">View Data</string>
+    <string name="record">Record</string>
+    <string name="created_by_4plus_in">Created by 4plus.in</string>
+    <string name="upload_data">Upload Data</string>
+</resources>
