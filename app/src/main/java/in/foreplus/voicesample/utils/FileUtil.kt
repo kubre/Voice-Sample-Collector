@@ -25,7 +25,7 @@ object FileUtil {
 
     fun decodeData(data: File): Pair<String, List<String>> {
         val lines = data.readLines()
-        return Pair(lines[0], lines.subList(0, lines.size))
+        return Pair(lines[0], lines.subList(1, lines.size))
     }
 
 }

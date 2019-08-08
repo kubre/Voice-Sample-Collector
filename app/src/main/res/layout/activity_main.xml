@@ -14,7 +14,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="24dp"
-            app:layout_constraintHorizontal_bias="0.53"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintTop_toBottomOf="@+id/textView"
             style="@style/PrimaryButton"
             android:layout_marginTop="24dp"
@@ -30,6 +30,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="8dp"
             android:layout_marginTop="24dp"
+            android:textColor="@color/primaryTextColor"
             style="@style/TextAppearance.AppCompat.Large"/>
     <com.google.android.material.button.MaterialButton
             style="@style/PrimaryButton"
@@ -48,24 +49,42 @@
             style="@style/SecondaryButton"
             android:layout_height="wrap_content"
             android:id="@+id/btnRecordScreen"
+            app:icon="@drawable/ic_mic"
+            app:iconGravity="textStart"
             app:layout_constraintEnd_toEndOf="@+id/btnViewData"
             app:layout_constraintStart_toStartOf="@+id/btnViewData"
             android:layout_marginTop="32dp"
             app:layout_constraintTop_toBottomOf="@+id/btnViewData"/>
-    <TextView
-            android:text="@string/created_by_4plus_in"
-            android:layout_width="wrap_content"
+    <com.google.android.material.button.MaterialButton
+            android:text="@string/view_samples"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/txtLink"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginBottom="16dp"
-            app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="8dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="8dp"
-            android:layout_marginTop="8dp"
+            style="@style/SecondaryButton"
+            android:id="@+id/btnViewSamples"
+            app:layout_constraintEnd_toEndOf="@+id/btnRecordScreen"
+            app:layout_constraintStart_toStartOf="@+id/btnRecordScreen"
             app:layout_constraintTop_toBottomOf="@+id/btnRecordScreen"
-            app:layout_constraintVertical_bias="1.0"
-            android:textColor="#1188ff"
-            android:textSize="16sp"/>
+            android:layout_marginTop="8dp"/>
+
+    <com.google.android.material.button.MaterialButton
+            android:text="@string/about_us"
+            android:layout_width="0dp"
+            style="@style/SecondaryButton"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnAboutApp"
+            app:layout_constraintEnd_toEndOf="@+id/btnViewSamples"
+            app:layout_constraintStart_toStartOf="@+id/btnViewSamples"
+            android:layout_marginTop="32dp"
+            app:layout_constraintTop_toBottomOf="@+id/btnViewSamples"/>
+    <com.google.android.material.button.MaterialButton
+            android:text="@string/open_source_licenses"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/SecondaryButton"
+            android:id="@+id/btnOpenSourceLicenses"
+            app:layout_constraintEnd_toEndOf="@+id/btnAboutApp"
+            app:layout_constraintStart_toStartOf="@+id/btnAboutApp"
+            app:layout_constraintTop_toBottomOf="@+id/btnAboutApp"
+            android:layout_marginTop="8dp"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

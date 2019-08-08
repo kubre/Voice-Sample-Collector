@@ -8,11 +8,10 @@ import android.app.AlertDialog
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Bundle
-import android.util.Log
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.android.synthetic.main.activity_main.*
 import java.io.File
 
@@ -55,8 +54,36 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnViewData.setOnClickListener {
-            Toast.makeText(this@MainActivity, "ViewData", Toast.LENGTH_LONG).show()
+            val data = FileUtil.decodeData(File(externalMediaDirs[0], DATA_FILE))
+            val sampleDataName = data.first
+            val dataSet = data.second
+            MaterialAlertDialogBuilder(this@MainActivity)
+                .setTitle("Data File: $sampleDataName")
+                .setItems(dataSet.toTypedArray()) { _, _ -> }
+                .setNeutralButton("OK") { d, _ -> d.dismiss() }
+                .show()
         }
+
+        btnAboutApp.setOnClickListener {
+            MaterialAlertDialogBuilder(this@MainActivity)
+                .setTitle("About Us")
+                .setView(R.layout.about_app_dialog)
+                .setNeutralButton("OK") { d, _ -> d.dismiss() }
+                .show()
+        }
+
+        btnOpenSourceLicenses.setOnClickListener {
+            MaterialAlertDialogBuilder(this@MainActivity)
+                .setTitle("Open Source Licenses")
+                .setMessage(R.string.os_licenses)
+                .setNeutralButton("OK"){d,_ -> d.dismiss()}
+                .show()
+        }
+
+        btnViewSamples.setOnClickListener {
+            // TODO: Make View sample screen
+        }
+
     }
 
 

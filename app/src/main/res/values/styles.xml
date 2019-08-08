@@ -18,6 +18,8 @@
         <item name="materialCardViewStyle">@style/CardDark</item>
 
         <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:textAppearanceLarge">@style/LargeTitle</item>
+        <item name="android:editTextStyle">@style/DarkEditText</item>
     </style>
 
     <style name="PrimaryButton" parent="Widget.MaterialComponents.Button.UnelevatedButton">
@@ -30,11 +32,20 @@
     </style>
 
     <style name="DialogDark" parent="Theme.MaterialComponents.Dialog.Alert">
-        <item name="android:background">@color/primaryColor</item>
+        <item name="android:background">@color/primaryLightColor</item>
         <item name="android:actionButtonStyle">@style/SecondaryButton</item>
     </style>
 
     <style name="CardDark" parent="CardView.Dark">
         <item name="android:backgroundTint">@color/primaryColor</item>
+    </style>
+
+    <style name="LargeTitle" parent="TextAppearance.AppCompat.Large">
+        <item name="android:textColor">@color/primaryTextColor</item>
+    </style>
+    
+    <style name="DarkEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:textColorHint">@color/primaryLightColor</item>
     </style>
 </resources>

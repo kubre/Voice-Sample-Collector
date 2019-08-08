@@ -70,9 +70,9 @@ class RecordActivity : AppCompatActivity() {
             val data = FileUtil.decodeData(dataFile)
             dataName = data.first
             dataSet = data.second
-            Log.d("MYCART", "${dataSet?.size}")
-            setupDialogBoxes()
+            txtDataFileName.text = dataName
             resetProfile()
+            setupDialogBoxes()
             setUpRecording()
         } else {
             MaterialAlertDialogBuilder(this@RecordActivity).apply {
@@ -189,6 +189,7 @@ class RecordActivity : AppCompatActivity() {
             setTitle("Set Profile Name")
             val input = EditText(this@RecordActivity)
             input.inputType = InputType.TYPE_CLASS_TEXT
+            input.setTextColor(Color.WHITE)
             setView(input)
             setPositiveButton("OK") { d, _ ->
                 txtProfileName.text = input.text.toString()
@@ -218,7 +219,7 @@ class RecordActivity : AppCompatActivity() {
 
     private fun resetProfile() {
         txtToRecord.setTextColor(Color.WHITE)
-        dataCursor = 0
+        dataCursor = -1
         nextSampleToRecord()
     }
 

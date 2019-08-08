@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Voice Sample</string>
+    <string name="app_name">Voice Sample Collector</string>
     <string name="mono">Mono</string>
     <string name="stereo">Stereo</string>
     <string name="channel">Channel</string>
@@ -9,4 +9,66 @@
     <string name="record">Record</string>
     <string name="created_by_4plus_in">Created by 4plus.in</string>
     <string name="upload_data">Upload Data</string>
+    <string name="view_samples">View Samples</string>
+    <string name="about_us">About</string>
+    <string name="open_source_licenses">Open Source Licenses</string>
+    <string name="app_description">
+        <i>(https://github.com/kubre/Voice-Sample-Collector) License GPL-3.0</i>\n\n
+        This app is initially created for the research students and fellows for the collection voice/audio samples in
+        various frequencies according to their research need.\n
+        Feel free to add or suggest new features at github page.
+        Report security related problems at security@kubre.in
+    </string>
+    <string name="os_licenses">
+        The App uses following:
+
+        Android AppCompat Library V7\n
+        The Apache Software License, Version 2.0\n
+        http://www.apache.org/licenses/LICENSE-2.0.txt
+        \n\n
+        Androidx Ktx Library\n
+        The Apache Software License, Version 2.0\n
+        http://www.apache.org/licenses/LICENSE-2.0.txt
+        \n\n
+
+        Constraintlayout Library
+        The Apache Software License, Version 2.0\n
+        http://www.apache.org/licenses/LICENSE-2.0.txt
+        \n\n
+
+        Material Design Library\n
+        https://github.com/material-components/material-components-android\n
+        The Apache Software License, Version 2.0\n
+        http://www.apache.org/licenses/LICENSE-2.0.txt
+        \n\n
+
+        Material Icons\n
+        https://github.com/google/material-design-icons\n
+        The Apache Software License, Version 2.0\n
+        http://www.apache.org/licenses/LICENSE-2.0.txt
+        \n\n
+
+        Om Recorder\n
+        (https://github.com/kailash09dabhi/OmRecorder)\n
+        \n
+        Copyright 2017 Kailash Dabhi (Kingbull Technology)
+        \n
+        Licensed under the Apache License, Version 2.0 (the "License");
+        you may not use this file except in compliance with the License.
+        You may obtain a copy of the License at
+        \n
+        http://www.apache.org/licenses/LICENSE-2.0
+        \n\n
+
+        Unless required by applicable law or agreed to in writing, software
+        distributed under the License is distributed on an "AS IS" BASIS,
+        WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+        See the License for the specific language governing permissions and
+        limitations under the License.
+    </string>
+    <string name="app_version">Version: 2019.08 (in-dev)</string>
+    <string name="team">Team</string>
+    <string name="email">email</string>
+    <string name="welcome_text">Let us know, you\'re a user</string>
+    <string name="skip">Skip</string>
 </resources>
