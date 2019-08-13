@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Voice Sample Collector</string>
+    <string name="app_name">Speech Samples</string>
     <string name="mono">Mono</string>
     <string name="stereo">Stereo</string>
     <string name="channel">Channel</string>
